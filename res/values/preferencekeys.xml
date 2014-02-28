@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+    <string name="bool_enable">bool_enable</string>
+    <string name="bool_enable_autounlock">bool_enable_autounlock</string>
+    <string name="bool_display_systemapps">bool_display_systemapps</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_enable">Enable CalLocker</string>
+    <string name="pref_enable">Enable CamLocker</string>
+
+    <string name="pref_cat_appselection">App Selection</string>
+    <string name="pref_display_systemapps_title">Display system apps.</string>
+    <string name="pref_display_systemapps_summary">Display system apps in the app selection view.</string>
+
+    <string name="pref_cat_misc">Miscellaneous</string>
+    <string name="pref_enable_autounlock_title">Enable AutoUnlock</string>
+    <string name="pref_enable_autounlock_summary">Enable autounlock for allowed apps</string>
+</resources>
