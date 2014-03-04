@@ -22,7 +22,10 @@
 
     <string name="tab_applist">Allowed Apps</string>
     <string name="tab_references">Preferences</string>
+    <string name="tab_gingerbreadsupport">Toggle Lock</string>
     <string name="button_Okay">Okay</string>
     <string name="dialog_about_title">About</string>
+
+    <string name="gingerbread_fragment_toggleButtonDescription">Tap to manually lock/ unlock the camera</string>
 
 </resources>

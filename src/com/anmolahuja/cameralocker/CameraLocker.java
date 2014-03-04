@@ -3,6 +3,8 @@ package com.anmolahuja.cameralocker;
 import android.hardware.Camera;
 import android.util.Log;
 
+// TODO: turns out for now Android only allows one camera to be accessed at one time,
+// so the rest of this class is waste, clean
 public final class CameraLocker
 {
 
@@ -103,4 +105,16 @@ public final class CameraLocker
 			camera = null;
 		}
 	}
+
+	// A seriously hacky way of checking if any camera is locked
+	public final boolean anyLocked()
+	{
+		for( final Camera camera: m_cameras )
+		{
+			if( camera != null )
+				return true;
+		}
+		return false;
+	}
+
 }
