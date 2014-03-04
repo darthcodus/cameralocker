@@ -166,13 +166,16 @@ public class PackageData implements OnLoadCompleteListener<Cursor>, PackageDataH
 			final List<PackageInfo> packageList = m_packageManager
 					.getInstalledPackages( PackageManager.GET_PERMISSIONS );
 			final boolean displaySystemApps = CameraLockerPreferenceManager.instance( m_context ).displaySystemApps();
+			final String cameraLockerPackage = m_context.getPackageName();
 			if( m_packageList == null )
 				m_packageList = new ArrayList<PackageInfo>();
 			else
 				m_packageList.clear();
 			for( final PackageInfo pi : packageList )
 			{
-				if( ( !displaySystemApps && ( ( pi.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM ) == 0 ) ) || pi.requestedPermissions == null )
+				if( pi.packageName.equals( cameraLockerPackage )
+						|| ( !displaySystemApps && ( ( pi.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM ) == 0 ) )
+						|| pi.requestedPermissions == null )
 					continue;
 				for( String permission : pi.requestedPermissions )
 				{
