@@ -28,10 +28,13 @@
         android:textStyle="bold" />
 
     <org.holoeverywhere.widget.Switch
+        xmlns:holo="http://schemas.android.com/apk/res-auto"
         android:id="@id/apppicker_rowitem_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        holo:textOff="@string/applistitem_switch_off"
+        holo:textOn="@string/applistitem_switch_on" />
 
 </RelativeLayout>

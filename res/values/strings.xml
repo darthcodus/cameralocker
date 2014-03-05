@@ -28,4 +28,7 @@
 
     <string name="gingerbread_fragment_toggleButtonDescription">Tap to manually lock/ unlock the camera</string>
 
+    <string name="applistitem_switch_on">Allow</string>
+    <string name="applistitem_switch_off">Disallow</string>
+
 </resources>
